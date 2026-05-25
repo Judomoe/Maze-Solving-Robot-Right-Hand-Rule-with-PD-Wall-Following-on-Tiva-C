@@ -73,9 +73,3 @@ Maze-Robot/
 2. Link **TivaWare driverlib**
 3. Build and flash to Tiva C via USB
 
-## Future Improvements
-- Add encoder feedback for more accurate motor speed control
-- Support multiply connected mazes (Pledge algorithm)
-- Add UART logging for real-time PD debug output
-- Replace polling sensor reads with timer interrupts
-- Add IR sensors for faster, noise-free distance measurement
