@@ -64,8 +64,19 @@ signal down to a safe 3.3V before it reaches the microcontroller.
 ---
 
 ## Project Structure
-Maze-Robot/
-├── main.c          # Full firmware (state machine, PD, sensors, PWM, motors)
+Maze-Solving-Robot-Right-Hand-Rule-with-PD-Wall-Following-on-Tiva-C/
+├── TivaC-Maze-Solver/
+│   ├── Maze_solver.c        # ⭐ Main firmware — state machine, PD controller,
+│   │                        #    ultrasonic sensors, PWM motor control, LEDs
+│   ├── startup_ccs.c        # Interrupt vector table & startup routine (CCS generated)
+│   ├── uart_comm.c          # UART communication utilities
+│   ├── uart_comm.h          # UART header
+│   ├── blinky_ccs.cmd       # Linker command file (memory map for TM4C123)
+│   ├── macros.ini_initial   # CCS debugger macros & watch variables
+│   ├── target_config.ccxml  # Code Composer Studio target configuration
+│   ├── project.log          # CCS build log
+│   ├── Debug/               # Compiled binaries & object files (not for editing)
+│   └── targetConfigs/       # CCS target config files
 └── README.md
 
 ## How to Build & Flash
