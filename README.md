@@ -64,20 +64,21 @@ signal down to a safe 3.3V before it reaches the microcontroller.
 ---
 
 ## Project Structure
+```
 Maze-Solving-Robot-Right-Hand-Rule-with-PD-Wall-Following-on-Tiva-C/
 ├── TivaC-Maze-Solver/
-│   ├── Maze_solver.c        # ⭐ Main firmware — state machine, PD controller,
-│   │                        #    ultrasonic sensors, PWM motor control, LEDs
-│   ├── startup_ccs.c        # Interrupt vector table & startup routine (CCS generated)
-│   ├── uart_comm.c          # UART communication utilities
+│   ├── Maze_solver.c        # ⭐ Main firmware
+│   ├── startup_ccs.c        # Startup routine
+│   ├── uart_comm.c          # UART utilities
 │   ├── uart_comm.h          # UART header
-│   ├── blinky_ccs.cmd       # Linker command file (memory map for TM4C123)
-│   ├── macros.ini_initial   # CCS debugger macros & watch variables
-│   ├── target_config.ccxml  # Code Composer Studio target configuration
-│   ├── project.log          # CCS build log
-│   ├── Debug/               # Compiled binaries & object files (not for editing)
+│   ├── blinky_ccs.cmd       # Linker command file
+│   ├── macros.ini_initial   # CCS debugger macros
+│   ├── target_config.ccxml  # CCS target configuration
+│   ├── project.log          # Build log
+│   ├── Debug/               # Compiled binaries (not for editing)
 │   └── targetConfigs/       # CCS target config files
 └── README.md
+```
 
 ## How to Build & Flash
 1. Open in **Code Composer Studio (CCS)**
